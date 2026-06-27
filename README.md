@@ -1,47 +1,29 @@
 # 🎬 Movie Ticket Booking System
 
-A desktop-based **Movie Ticket Booking System** developed using **Python (Tkinter)** and **MySQL**. This application allows users to register, log in, browse movies, book tickets, cancel bookings, and view booking history. It also includes an **Admin Panel** for managing movies and monitoring bookings.
+A desktop-based Movie Ticket Booking System developed using **Python**, **Tkinter**, and **MySQL**. This application allows users to register, login, search movies, book tickets, view booking history, cancel bookings, and receive ticket confirmations.
 
----
+## 📌 Features
 
-## 🚀 Features
-
-### 👤 User Features
 - User Registration
-- Secure Login
-- Forgot Password (Security Answer)
+- User Login Authentication
 - View Available Movies
 - Search Movies
 - Book Movie Tickets
+- View Booking History
 - Cancel Bookings
-- Booking History
-- Logout
-
-### 👨‍💼 Admin Features
-- Admin Login
-- Add Movies
-- Update Movies
-- Delete Movies
-- View All Bookings
-- Admin Dashboard (Users, Movies & Bookings Count)
-
-### 📧 Additional Features
 - Email Ticket Confirmation
-- PDF Ticket Generation
-- MySQL Database Integration
-- Tkinter GUI
+- Database Integration using MySQL
+- GUI Interface using Tkinter
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
-- Python 3
+- Python 3.9
 - Tkinter
 - MySQL
 - mysql-connector-python
-- ReportLab
-- SMTP (Email)
-- Git & GitHub
+- SMTP Email Service
 
 ---
 
@@ -50,18 +32,21 @@ A desktop-based **Movie Ticket Booking System** developed using **Python (Tkinte
 ```
 MovieTicketBooking/
 │
+├── main.py
 ├── current_gui.py
-├── database.py
 ├── booking.py
-├── movies.py
-├── movie_ticket.py
+├── database.py
 ├── email_sender.py
 ├── email_ticket.py
-├── pdf_ticket.py
-├── user.py
+├── movie_ticket.py
 ├── movie_booking.sql
 ├── requirements.txt
 ├── screenshots/
+│   ├── homepage.png
+│   ├── login.png
+│   ├── register.png
+│   ├── book tickets.png
+│   └── booking_history.png
 └── README.md
 ```
 
@@ -73,29 +58,26 @@ MovieTicketBooking/
 
 ```bash
 git clone https://github.com/ramyasreedegala2024/MovieTicketBooking.git
-```
-
-### Move into Project
-
-```bash
 cd MovieTicketBooking
 ```
 
-### Install Requirements
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Import Database
+### Setup Database
 
-Open MySQL and run:
+1. Open MySQL.
+2. Create a database.
+3. Import the SQL file:
 
 ```sql
-SOURCE movie_booking.sql;
+source movie_booking.sql
 ```
 
-### Run Project
+### Run Application
 
 ```bash
 python current_gui.py
@@ -103,47 +85,50 @@ python current_gui.py
 
 ---
 
-# 📸 Screenshots
+## 🖼 Screenshots
 
-## Home Page
+### Homepage
 
-![Home](screenshots/home.png)
+![Homepage](screenshots/homepage.png)
 
----
-
-## Login
+### Login
 
 ![Login](screenshots/login.png)
 
----
-
-## Register
+### Register
 
 ![Register](screenshots/register.png)
 
----
+### Book Tickets
 
-## Book Ticket
+![Book Tickets](screenshots/book%20tickets.png)
 
-![Book Ticket](screenshots/book%20tickets.png)
-
----
-
-## Booking History
+### Booking History
 
 ![Booking History](screenshots/booking_history.png)
 
 ---
 
-## 📌 Future Improvements
+## 🎯 Project Functionalities
 
-- Online Payment Integration
-- Seat Layout Selection
-- QR Code Ticket
-- Movie Posters
-- Email OTP Verification
-- Password Encryption
-- Responsive UI
+- User authentication system
+- Movie search functionality
+- Ticket booking and cancellation
+- Booking history management
+- Email ticket confirmation
+- MySQL database operations
+- Interactive graphical user interface
+
+---
+
+## 🚀 Future Enhancements
+
+- Online payment integration
+- Admin dashboard
+- Seat selection interface
+- Movie posters and trailers
+- QR code ticket generation
+- Cloud database deployment
 
 ---
 
@@ -153,9 +138,3 @@ python current_gui.py
 
 GitHub:
 https://github.com/ramyasreedegala2024
-
----
-
-## ⭐ If you like this project
-
-Please give this repository a **Star ⭐**.
