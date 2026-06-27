@@ -1,35 +1,41 @@
 # 🎬 Movie Ticket Booking System
 
-A desktop-based Movie Ticket Booking System developed using **Python**, **Tkinter**, and **MySQL**. This application allows users to register, login, search movies, book tickets, view booking history, cancel bookings, and receive ticket confirmations.
+## About the Project
 
-## 📌 Features
+This is a desktop-based **Movie Ticket Booking System** developed using **Python, Tkinter, and MySQL**. The main objective of this project is to provide a simple and user-friendly interface for booking movie tickets. Users can register, log in, search for movies, book tickets, view their booking history, cancel bookings, and receive ticket confirmation through email.
 
-- User Registration
-- User Login Authentication
-- View Available Movies
-- Search Movies
-- Book Movie Tickets
-- View Booking History
-- Cancel Bookings
-- Email Ticket Confirmation
-- Database Integration using MySQL
-- GUI Interface using Tkinter
+This project was developed as part of learning database connectivity, GUI development, and application programming using Python.
 
 ---
 
-## 🛠 Technologies Used
+## Features
 
-- Python 3.9
-- Tkinter
-- MySQL
-- mysql-connector-python
-- SMTP Email Service
+* User Registration
+* User Login Authentication
+* View Available Movies
+* Search Movies
+* Book Movie Tickets
+* View Booking History
+* Cancel Bookings
+* Email Ticket Confirmation
+* MySQL Database Integration
+* Graphical User Interface using Tkinter
 
 ---
 
-## 📂 Project Structure
+## Technologies Used
 
-```
+* Python 3.9
+* Tkinter
+* MySQL
+* mysql-connector-python
+* SMTP Email Service
+
+---
+
+## Project Structure
+
+```text
 MovieTicketBooking/
 │
 ├── main.py
@@ -39,6 +45,8 @@ MovieTicketBooking/
 ├── email_sender.py
 ├── email_ticket.py
 ├── movie_ticket.py
+├── movies.py
+├── user.py
 ├── movie_booking.sql
 ├── requirements.txt
 ├── screenshots/
@@ -52,32 +60,32 @@ MovieTicketBooking/
 
 ---
 
-## ⚙️ Installation
+## Installation Steps
 
-### Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ramyasreedegala2024/MovieTicketBooking.git
 cd MovieTicketBooking
 ```
 
-### Install Dependencies
+### 2. Install Required Packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Setup Database
+### 3. Configure MySQL Database
 
-1. Open MySQL.
-2. Create a database.
-3. Import the SQL file:
+Open MySQL and create a database:
 
 ```sql
-source movie_booking.sql
+CREATE DATABASE movie_booking;
+USE movie_booking;
+SOURCE movie_booking.sql;
 ```
 
-### Run Application
+### 4. Run the Application
 
 ```bash
 python current_gui.py
@@ -85,21 +93,21 @@ python current_gui.py
 
 ---
 
-## 🖼 Screenshots
+## Screenshots
 
-### Homepage
+### Home Page
 
 ![Homepage](screenshots/homepage.png)
 
-### Login
+### Login Page
 
 ![Login](screenshots/login.png)
 
-### Register
+### Registration Page
 
 ![Register](screenshots/register.png)
 
-### Book Tickets
+### Ticket Booking
 
 ![Book Tickets](screenshots/book%20tickets.png)
 
@@ -109,32 +117,32 @@ python current_gui.py
 
 ---
 
-## 🎯 Project Functionalities
+## Functionalities Implemented
 
-- User authentication system
-- Movie search functionality
-- Ticket booking and cancellation
-- Booking history management
-- Email ticket confirmation
-- MySQL database operations
-- Interactive graphical user interface
-
----
-
-## 🚀 Future Enhancements
-
-- Online payment integration
-- Admin dashboard
-- Seat selection interface
-- Movie posters and trailers
-- QR code ticket generation
-- Cloud database deployment
+* User authentication and registration
+* Movie search functionality
+* Ticket booking system
+* Booking cancellation
+* Booking history management
+* Email confirmation service
+* Database operations using MySQL
+* Interactive GUI application
 
 ---
 
-## 👩‍💻 Author
+## Future Improvements
+
+* Online payment gateway integration
+* Admin dashboard
+* Seat selection system
+* Movie posters and trailers
+* QR code ticket generation
+* Cloud database support
+
+---
+
+## Author
 
 **Ramya Sree Degala**
 
-GitHub:
-https://github.com/ramyasreedegala2024
+GitHub: https://github.com/ramyasreedegala2024
